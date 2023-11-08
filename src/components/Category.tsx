@@ -5,7 +5,7 @@ import { useRef, useEffect, useState } from "react";
 const Category = () => {
 
     const [width, setWidth] = useState(0);
-    const carousel = useRef<null | HTMLDivElement>(null);
+    const carousel = useRef<HTMLDivElement>(null);
   
     useEffect(()=>{
         if (carousel.current) {
