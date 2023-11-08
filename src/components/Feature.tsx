@@ -2,16 +2,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong, faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 import { featuredProducts } from './lists';
 import { motion } from 'framer-motion';
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, RefObject } from "react";
 
 const Feature = () => {
 
   const [width, setWidth] = useState(0);
-  const carousel = useRef();
+  const carousel: RefObject<HTMLDivElement> = useRef(null);
 
   useEffect(()=>{
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  },[])
+    if (carousel.current) {
+  setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+}
+},[])
+
 
   return (
     <section className=' bg-[#131313] pt-10 pb-10'>

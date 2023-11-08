@@ -1,11 +1,12 @@
 import { CategoryItems } from "./lists";
 import { motion } from 'framer-motion';
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, RefObject } from "react";
 
 const Category = () => {
 
     const [width, setWidth] = useState(0);
-    const carousel = useRef<HTMLDivElement | null>(null);
+    const carousel: RefObject<HTMLDivElement> = useRef(null);
+
   
     useEffect(()=>{
         if (carousel.current) {
