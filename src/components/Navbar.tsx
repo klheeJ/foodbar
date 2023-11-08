@@ -6,8 +6,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const Menus = ['Pizza', 'Burger'];
 
-  const toggleOpen = (e) => {
-    e.preventDefault();
+  const toggleOpen = () => {
     const prevValue = open;
     setOpen(!prevValue)
   }
