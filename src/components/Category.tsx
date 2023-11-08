@@ -5,10 +5,12 @@ import { useRef, useEffect, useState } from "react";
 const Category = () => {
 
     const [width, setWidth] = useState(0);
-    const carousel = useRef();
+    const carousel = useRef<HTMLDivElement | null>(null);
   
     useEffect(()=>{
+        if (carousel.current) {
       setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    }
     },[])
 
   return (
