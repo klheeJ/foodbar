@@ -1,7 +1,7 @@
 
 const HotDeal = () => {
   return (
-    <div className="bg-[url('./public/HotDealBackground.jpg')] bg-cover h-full">
+    <div className="bg-[url('/HotDealBackground.jpg')] bg-cover h-full">
       <div className="text-white">
         <div>We Offer A Hot Deal Offer Every Festival</div>
         <div>Deal of the day</div>
