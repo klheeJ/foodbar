@@ -1,7 +1,7 @@
 const Questions = () => {
   return (
     <div className="flex items-center justify-center">
-      <img className="opacity-80" src="./public/QuestionBackground.jpg" alt="" />
+      <img className="opacity-80" src="/QuestionBackground.jpg" alt="" />
       <div className="absolute text-center">
         <div className="font-bold text-red-600 text-2xl ">Have Any Questions?</div>
         <div className="text-white text-4xl tracking-wider">+7645242368</div>
