@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div className="flex bg-[#3E3D3D] text-white">
       <div className="w-1/2">
-        <img src="./public/logo.png" alt="" />
+        <img src="/logo.png" alt="" />
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         <div>
           <h4>Follow Us:</h4>
