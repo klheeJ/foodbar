@@ -1,7 +1,7 @@
 const Subscribe = () => {
   return (
     <div className="relative flex justify-center items-center">
-      <img src="./public/news.jpg" alt="" />
+      <img src="/news.jpg" alt="" />
       <div className="absolute text-white text-center">
         <p>Subscribe to our weekly newsletter</p>
         <p>Lorem ipsum dolor sit amet consectetur.</p>
