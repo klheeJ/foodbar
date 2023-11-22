@@ -44,7 +44,7 @@ const HotDeal = () => {
   },[])
 
   return (
-    <div className="bg-[url('./HotDealBackground.jpg')] bg-cover h-[30em] flex font-bold">
+    <div className="bg-[url('/HotDealBackground.jpg')] bg-cover h-[30em] flex font-bold">
       <div className="text-white ml-40 flex flex-col justify-center">
         <div className="text-xl">We Offer A Hot Deal Offer Every Festival</div>
         <div className="text-4xl">Deal of the day</div>
