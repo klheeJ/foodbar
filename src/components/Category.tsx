@@ -19,7 +19,7 @@ const Category = () => {
         <div>
             <div className='text-white flex flex-row justify-around pb-6'>
                 <div>
-                    <h2>Shop By Category</h2>
+                    <div className='text-2xl'>Shop By Category</div>
                     <p>------------------</p>
                 </div>
             </div>
@@ -36,8 +36,13 @@ const Category = () => {
                         >
                         {CategoryItems.map((item)=> {
                             return (
-                            <motion.div className='min-w-[20%] rounded-lg border-2 border-solid border-white '>
-                            <img className="pointer-events-none" src={item.image} alt="" />
+                            <motion.div className='min-w-[20%] relative rounded-lg border-2 border-solid border-white '>
+                                <img className="pointer-events-none" src={item.image} alt="" />
+                                <div className='category-item absolute inset-0 flex items-center justify-center'>
+                                    <button className="shop-button bg-white p-2 pl-10 pr-10 rounded-lg">
+                                        {item.type}
+                                    </button>
+                                </div>
                             </motion.div>
                         );
                         })}

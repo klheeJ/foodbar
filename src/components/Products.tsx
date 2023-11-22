@@ -21,7 +21,7 @@ const Products = () => {
     <div>
         <div className='text-white flex flex-row justify-around pb-6'>
             <div>
-                <h2>Our Products</h2>
+                <div className='text-2xl'>Our Products</div>
                 <p>------------------</p>
             </div>
             <div>
