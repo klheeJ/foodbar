@@ -6,12 +6,12 @@ const HotDeal = () => {
   const [timerMinutes, setTimerMinutes] = useState(0);
   const [timerSeconds, setTimerSeconds] = useState(0);
 
-  let interval = useRef()
+  let interval = useRef<number | null>(null)
 
   const startTimer = (() => {
     const countdownDate = new Date('May 30, 2025 00:00:00').getTime();
 
-    interval = setInterval(()=> {
+    interval.current = setInterval(()=> {
       const now = new Date().getTime();
       const distance = countdownDate - now;
 
@@ -22,7 +22,9 @@ const HotDeal = () => {
 
       if (distance < 0) {
         /// stop our timer 
+        if (interval.current !== null) {
         clearInterval(interval.current);
+        }
       } else {
         /// update timer 
         setTimerDays(days);
@@ -36,7 +38,8 @@ const HotDeal = () => {
   useEffect(()=> {
     startTimer();
     return ()=> {
-      clearInterval(interval.current);
+      if (interval.current !== null) {
+        clearInterval(interval.current);}
     }
   },[])
 
