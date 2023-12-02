@@ -316,84 +316,84 @@ export const CategoryItems = [
 
 export const OfferItems = [
     {
-        image: "/offer/1.jpg",
+        image: "./public/offer/1.jpg",
         id: "food1",
         name: "Bacon Burger",
         prevPrice: "$15",
         currentPrice: "$12"
     },
     {
-        image: "/offer/2.jpg",
+        image: "./public/offer/2.jpg",
         id: "food2",
         name: "French Fries",
         prevPrice: "$15",
         currentPrice: "$12"
     },
     {
-        image: "/offer/3.jpg",
+        image: "./public/offer/3.jpg",
         id: "food3",
         name: "Bacon Pizza",
         prevPrice: "$20",
         currentPrice: "$18"
     },
     {
-        image: "/offer/4.jpg",
+        image: "./public/offer/4.jpg",
         id: "food4",
         name: "Vegetable Burger",
         prevPrice: "$15",
         currentPrice: "$12"
     },
     {
-        image: "/offer/5.jpg",
+        image: "./public/offer/5.jpg",
         id: "food5",
         name: "Cream Burger",
         prevPrice: "$15",
         currentPrice: "$12"
     },
     {
-        image: "/offer/6.jpg",
+        image: "./public/offer/6.jpg",
         id: "food6",
         name: "French Burger",
         prevPrice: "$15",
         currentPrice: "$12"
     },
     {
-        image: "/offer/7.jpg",
+        image: "./public/offer/7.jpg",
         id: "food7",
         name: "Chicken Pizza",
         prevPrice: "$15",
         currentPrice: "$12"
     },
     {
-        image: "/offer/8.jpg",
+        image: "./public/offer/8.jpg",
         id: "food8",
         name: "Tomato Burger",
         prevPrice: "$30",
         currentPrice: "$15"
     },
     {
-        image: "/offer/9.jpg",
+        image: "./public/offer/9.jpg",
         id: "food9",
         name: "Japani Burger",
         prevPrice: "$15",
         currentPrice: "$12"
     },
     {
-        image: "/offer/10.jpg",
+        image: "./public/offer/10.jpg",
         id: "food10",
         name: "Tatka French",
         prevPrice: "$15",
         currentPrice: "$12"
     },
     {
-        image: "/offer/11.jpg",
+        image: "./public/offer/11.jpg",
         id: "food11",
         name: "Meat Burger",
         prevPrice: "$15",
         currentPrice: "$12"
     },
     {
-        image: "/offer/12.jpg",
+        image: "./public/offer/12.jpg",
         id: "food12",
         name: "Chains Burger",
         prevPrice: "$25",
