@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <div className="flex bg-[#3E3D3D] text-white">
+    <div className="flex bg-[#3E3D3D] text-white pt-10 pb-10">
       <div className="w-1/2">
-        <img src="/logo.png" alt="" />
+        <img  className="w-[10rem]" src="/logo.png" alt="" />
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         <div>
           <h4>Follow Us:</h4>
@@ -14,7 +14,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex w-1/2">
+      <div className="flex flex-row gap-10 w-1/2">
         <div className="col">
           Quick Links
           <hr />

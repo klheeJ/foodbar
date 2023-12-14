@@ -3,12 +3,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faHeart, faCartArrowDown, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const [openAbout, setOpenAbout] = useState(false);
+  const [openPage, setOpenPage] = useState(false);
   const Menus = ['Pizza', 'Burger'];
 
-  const toggleOpen = () => {
-    const prevValue = open;
-    setOpen(!prevValue)
+  const toggleAbout = () => {
+    const prevAbout = openAbout;
+    setOpenAbout(!prevAbout)
+  }
+
+  const togglePage = () => {
+    const prevPage = openPage;
+    setOpenPage(!prevPage)
   }
 
   return (
@@ -18,20 +24,20 @@ const Navbar = () => {
         <ul className="text-white flex flex-row space-x-10 font-bold tracking-wider">
             <a href="" className='transition duration-300 ease-in-out hover:text-red-500'><li>Home</li></a>
             <div className='relative'>
-              <a href="" onClick={(toggleOpen)} className='transition duration-300 ease-in-out hover:text-red-500'><li>About</li></a>
-              {open && (<div className='absolute mt-1 bg-black'>
+              <a href="#" onClick={()=>toggleAbout()} className='transition duration-300 ease-in-out hover:text-red-500'><li>About</li></a>
+              {openAbout && (
+              <div className='absolute mt-1 bg-black'>
                   <ul>
-                    {
-                      Menus.map((menu)=>(
-                        <li key={menu}>
-                          {menu}
-                        </li>
+                    {Menus.map((menu)=>(
+                      <li key={menu}>{menu}</li>
                     ))}
                   </ul>
-                </div>)}
+                </div>
+              )}
             </div>
             <div className='relative'>
-              <a href="" className='transition duration-300 ease-in-out hover:text-red-500'><li>Page</li></a>
+              <a href="#" onClick={()=>togglePage()}  className='transition duration-300 ease-in-out hover:text-red-500'><li>Page</li></a>
+              {openPage && (
               <div className='toggle-menu absolute mt-1 bg-black'>
                     <ul>
                       {
@@ -41,7 +47,8 @@ const Navbar = () => {
                           </li>
                       ))}
                     </ul>
-              </div>
+                </div>
+              )}
             </div>
             <a href="" className='transition duration-300 ease-in-out hover:text-red-500'><li>Shop</li></a>
             <a href="" className='transition duration-300 ease-in-out hover:text-red-500'><li>Blog</li></a>
